@@ -1,0 +1,30 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+.container {
+    width: 380px;
+}
+
+
+/* Card styling start */
+img {
+    width: 75%;
+}
+
+.card-back {
+    background-color: var(--very-dark-violet);
+    height: 275px;
+}
+
+.card-back img {
+    padding: 40px 0px 40px 70px
+}
+/* Card styling end */
+
+p {
+    font-family: 'Rowdies', cursive;
+}
