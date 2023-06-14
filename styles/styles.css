@@ -17,14 +17,46 @@ img {
 
 .card-back {
     background-color: var(--very-dark-violet);
-    height: 275px;
+    height: 230px;
 }
 
 .card-back img {
-    padding: 40px 0px 40px 70px
+    padding: 20px 0px 40px 65px
 }
 /* Card styling end */
 
 p {
     font-family: 'Rowdies', cursive;
+    color: red;
+    /* color: var(--white); */
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 380px;
+    }
+    
+    
+    /* Card styling start */
+    img {
+        width: 75%;
+    }
+    
+    .card-back {
+        background-color: var(--very-dark-violet);
+        height: 230px;
+    }
+    
+    .card-back img {
+        padding: 20px 0px 40px 65px
+    }
+
+    .card-info-back {
+        position: absolute;
+        top: 90px;
+        right: 55px;
+        color: var(--white);
+        font-size: 10px;
+    }
+    /* Card styling end */
 }
