@@ -1,62 +1,97 @@
 :root {
-    --white: hsl(0, 0%, 100%);
-    --light-grayish-violet: hsl(270, 3%, 87%);
-    --dark-grayish-violet: hsl(279, 6%, 55%);
-    --very-dark-violet: hsl(278, 68%, 11%);
+	--white: hsl(0, 0%, 100%);
+	--light-grayish-violet: hsl(270, 3%, 87%);
+	--dark-grayish-violet: hsl(279, 6%, 55%);
+	--very-dark-violet: hsl(278, 68%, 11%);
 }
 
 .container {
-    width: 380px;
+	width: 380px;
 }
-
 
 /* Card styling start */
 img {
-    width: 75%;
+	width: 75%;
 }
 
 .card-back {
-    background-color: var(--very-dark-violet);
-    height: 230px;
+	background-color: var(--very-dark-violet);
+	height: 230px;
 }
 
 .card-back img {
-    padding: 20px 0px 40px 65px
+	padding: 20px 0px 40px 65px;
 }
 /* Card styling end */
 
-p {
-    font-family: 'Rowdies', cursive;
-    color: red;
-    /* color: var(--white); */
-}
-
 @media screen and (min-width: 375px) {
-    .container {
-        width: 380px;
-    }
-    
-    
-    /* Card styling start */
-    img {
-        width: 75%;
-    }
-    
-    .card-back {
-        background-color: var(--very-dark-violet);
-        height: 230px;
-    }
-    
-    .card-back img {
-        padding: 20px 0px 40px 65px
-    }
+	.container {
+		width: 380px;
+	}
 
-    .card-info-back {
-        position: absolute;
-        top: 90px;
-        right: 55px;
-        color: var(--white);
-        font-size: 10px;
-    }
-    /* Card styling end */
+	/* Card styling back start */
+	img {
+		width: 75%;
+	}
+
+	.card-back {
+		background-color: var(--very-dark-violet);
+		height: 220px;
+	}
+
+	.card-back img {
+		position: absolute;
+		right: 20px;
+	}
+
+	.card-info-back {
+		position: absolute;
+		top: 90px;
+		right: 55px;
+		color: var(--white);
+		font-size: 10px;
+	}
+	/* Card styling back end */
+
+	/* Card styling front start */
+	.card-front {
+		width: 240px;
+	}
+
+	.card-front img {
+		position: absolute;
+		top: 107px;
+		left: 20px;
+	}
+
+	.card-info-front-number {
+		color: var(--white);
+		position: relative;
+		display: flex;
+		justify-content: center;
+		font-weight: 400;
+		font-size: 18px;
+		font-family: 'Rowdies', cursive;
+		font-family: 'Space Grotesk', sans-serif;
+		top: -25px;
+		left: 40px;
+		z-index: 1;
+		letter-spacing: 3px;
+	}
+
+	p.card-info-front-name {
+		color: var(--white);
+		display: flex;
+		font-weight: 200;
+		justify-content: space-between;
+		font-family: 'Rowdies', cursive;
+		font-family: 'Space Grotesk', sans-serif;
+		z-index: 1;
+		position: relative;
+		left: 40px;
+		bottom: 10px;
+		font-size: 12px;
+	}
+
+	/* Card styling front end */
 }
