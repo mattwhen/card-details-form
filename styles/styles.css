@@ -70,7 +70,7 @@ img {
 		display: flex;
 		justify-content: center;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 15px;
 		font-family: 'Rowdies', cursive;
 		font-family: 'Space Grotesk', sans-serif;
 		top: -25px;
@@ -94,4 +94,37 @@ img {
 	}
 
 	/* Card styling front end */
+
+	/* Form start */
+	form#form-submission {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: 'Rowdies', cursive;
+		font-family: 'Space Grotesk', sans-serif;
+	}
+	
+	input.card-details {
+		padding: 8px;
+		width: 75%;
+		margin-bottom: 20px;
+	}
+
+	label.card-label {
+		/* padding: 10px; */
+		width: 75%;
+		text-align: left;
+	}
+
+	div#card-details-exp {
+		display: inline-block;
+		text-align: center;
+	}
+
+	input.card-details-exp {
+		width: 25%;
+
+	}
+	/* Form end */
 }

@@ -18,7 +18,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Rowdies&family=Space+Grotesk:wght@300;400;500;&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Rowdies&family=Space+Grotesk:wght@300;400;500&display=swap"
 			rel="stylesheet"
 		/>
 		<title>Interactive card details form</title>
@@ -47,19 +47,21 @@
 			</div>
 			<!-- Form start -->
 			<form id="form-submission" action="" method="post">
-				<label for="cardholder-name">Cardholder Name</label>
+				<label for="cardholder-name" class="card-label">Cardholder Name</label>
 				<input
 					type="text"
 					id="cardholder-name"
-					class=""
+					class="card-details"
 					placeholder=" e.g. Jane Appleseed"
 				/>
-				<label for="">Card Number</label>
-				<input type="text" class="" placeholder="e.g. 1234 5678 9123 0000" />
-				<label for="">Exp. Date (MM/YY) MM YY CVC</label>
-				<input type="text" class="card-details" placeholder="MM" />
-				<input type="text" class="card-details" placeholder="YY" />
-				<input type="text" class="card-details" placeholder="e.g. 123" />
+				<label for="input-card-number" class="card-label">Card Number</label>
+				<input type="text" class="card-details" id="input-card-number" placeholder="e.g. 1234 5678 9123 0000" />
+				<div id="card-details-exp">
+					<label for="input-details" class="card-label">Exp. Date (MM/YY) MM YY CVC</label>
+					<input type="text" class="" id='input-details' placeholder="MM" />
+					<input type="text" class="" placeholder="YY" />
+					<input type="text" class="" placeholder="e.g. 123" />
+				</div>
 				<button id="js-submit-button">Confirm</button>
 			</form>
 			<!-- Form end -->
