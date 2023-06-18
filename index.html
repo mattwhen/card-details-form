@@ -43,26 +43,55 @@
 			<div class="card-front">
 				<img src="./images//bg-card-front.png" alt="front of card" />
 				<p class="card-info-front-number">0000 0000 0000 0000</p>
-				<p class="card-info-front-name">Jane Appleseed <span class="card-info-front-expiration">00/00</span></p>
+				<p class="card-info-front-name">
+					Jane Appleseed <span class="card-info-front-expiration">00/00</span>
+				</p>
 			</div>
 			<!-- Form start -->
-			<form id="form-submission" action="" method="post">
-				<label for="cardholder-name" class="card-label">Cardholder Name</label>
-				<input
-					type="text"
-					id="cardholder-name"
-					class="card-details"
-					placeholder=" e.g. Jane Appleseed"
-				/>
-				<label for="input-card-number" class="card-label">Card Number</label>
-				<input type="text" class="card-details" id="input-card-number" placeholder="e.g. 1234 5678 9123 0000" />
-				<div id="card-details-exp">
-					<label for="input-details" class="card-label">Exp. Date (MM/YY) MM YY CVC</label>
-					<input type="text" class="" id='input-details' placeholder="MM" />
-					<input type="text" class="" placeholder="YY" />
-					<input type="text" class="" placeholder="e.g. 123" />
+			<form>
+				<div class="form-container">
+					<label for="cardholder-name" class="card-label"
+						>Cardholder Name</label
+					>
+					<input
+						type="text"
+						id="cardholder-name"
+						class="card-details"
+						placeholder=" e.g. Jane Appleseed"
+					/>
+					<label for="input-card-number" class="card-label">Card Number</label>
+					<input
+						type="text"
+						class="card-details"
+						id="input-card-number"
+						placeholder="e.g. 1234 5678 9123 0000"
+					/>
+					<!-- Expiration input details section -->
+					<label for="input-details" id="label-card-exp" class="card-label"
+					>Exp. Date (MM/YY)</label
+					>
+					<div class="expiration-details">
+						<input
+							type="text"
+							class="card-details-exp-input"
+							id="exp-mm"
+							placeholder="MM"
+						/>
+						<input
+							type="text"
+							class="card-details-exp-input"
+							id="exp-yy"
+							placeholder="YY"
+						/>
+							<input
+								type="text"
+								class="card-details-exp-input"
+								id="exp-cvc"
+								placeholder="e.g. 123"
+							/>
+					</div>
+					<button id="js-submit-button">Confirm</button>
 				</div>
-				<button id="js-submit-button">Confirm</button>
 			</form>
 			<!-- Form end -->
 		</div>

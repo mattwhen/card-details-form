@@ -96,13 +96,14 @@ img {
 	/* Card styling front end */
 
 	/* Form start */
-	form#form-submission {
+	.form-container {
 		margin-top: 60px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		font-family: 'Rowdies', cursive;
 		font-family: 'Space Grotesk', sans-serif;
+		padding: 0px 10px;
 	}
 	
 	input.card-details {
@@ -111,20 +112,40 @@ img {
 		margin-bottom: 20px;
 	}
 
-	label.card-label {
-		/* padding: 10px; */
-		width: 75%;
-		text-align: left;
-	}
-
-	div#card-details-exp {
-		display: inline-block;
+	.card-details-exp-input {
+		width: 15%;
+		padding: 8px 0px;
 		text-align: center;
 	}
 
-	input.card-details-exp {
-		width: 25%;
+	label.card-label {
+		display: flex;
+		position: relative;
+		width: 75%;
+		left: -10px;
+	}
 
+	/* Expiration styling start */
+	.expiration-details {
+		display: flex;
+		width: 80%;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	.cvc-details {
+		display: block;
+	}
+
+	input#exp-cvc {
+		flex-grow: 0.8;
+	}
+	/* Expiration styling end */
+
+
+	#exp-year {
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 	/* Form end */
 }
