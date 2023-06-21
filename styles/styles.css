@@ -14,6 +14,11 @@ img {
 	width: 75%;
 }
 
+::placeholder {
+    color: gray;
+    opacity: 1;
+}
+
 .card-back {
 	background-color: var(--very-dark-violet);
 	height: 230px;
@@ -100,6 +105,9 @@ img {
 		margin-top: 60px;
 		display: flex;
 		flex-direction: column;
+		font-size: 12px;
+		font-weight: 500;
+		color: var(--very-dark-violet);
 		align-items: center;
 		font-family: 'Rowdies', cursive;
 		font-family: 'Space Grotesk', sans-serif;
@@ -110,19 +118,35 @@ img {
 		padding: 8px;
 		width: 75%;
 		margin-bottom: 20px;
+		border-radius: solid 10gpx gray;
+	}
+
+	#card-details-exp {
+		width: 80%;
+		padding: 8px 0px;
+		position: relative;
+		display: inherit;
 	}
 
 	.card-details-exp-input {
-		width: 15%;
-		padding: 8px 0px;
-		text-align: center;
+		width: 10%;
+		border-radius: 4px;
+		padding: 8px;
+	}
+
+	input#exp-cvc {
+		flex-grow: 1;
+	}
+
+	input#exp-yy {
+		margin: 0px 5px;
 	}
 
 	label.card-label {
-		display: flex;
 		position: relative;
 		width: 75%;
 		left: -10px;
+		margin-bottom: 10px;
 	}
 
 	/* Expiration styling start */
