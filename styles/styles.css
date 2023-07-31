@@ -10,8 +10,15 @@
 }
 
 /* Card styling start */
-img {
-	width: 75%;
+.card-front img {
+	position: absolute;
+	top: 107px;
+	left: 20px;
+	width: 300px;
+}
+
+.card-back img {
+	width: 300px;
 }
 
 ::placeholder {
@@ -123,15 +130,15 @@ img {
 
 	#card-details-exp {
 		width: 80%;
-		padding: 8px 0px;
 		position: relative;
 		display: inherit;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.card-details-exp-input {
 		width: 10%;
-		border-radius: 4px;
-		padding: 8px;
+		padding: 5px;
 	}
 
 	input#exp-cvc {
@@ -162,7 +169,7 @@ img {
 	}
 
 	input#exp-cvc {
-		flex-grow: 0.8;
+		flex-grow: 1;
 	}
 	/* Expiration styling end */
 
@@ -170,6 +177,19 @@ img {
 	#exp-year {
 		margin-left: 5px;
 		margin-right: 5px;
+	}
+
+	#js-submit-button {
+	background-color: var(--very-dark-violet);
+	color: white;
+	font-family: 'Rowdies', cursive;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 15px;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 20px;
+    padding: 15px;
+    width: 100%;
 	}
 	/* Form end */
 }
